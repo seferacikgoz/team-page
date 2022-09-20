@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: whitesmoke;
+    margin: 3rem 6rem;
+  }
+  header {
+    display: flex;
+    margin-bottom: 3rem;
+  }
+  .header {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  .paragraf {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40%;
+    font-size: 1.5rem;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .card img {
+    width: 250px;
+    box-shadow: 5px 5px 20px black;
+    border-radius: 10px;
+  }
+  .up {
+    margin-top: 2rem;
+  }
+  .card figcaption {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+  .task {
+    font-weight: bolder;
+  }
+  .card-1 {
+    width: 290px;
+  }
+  .card .task {
+    writing-mode: tb-rl;
+    transform: translate(265px, -390px);
+  }
+  .up {
+    margin-top: 4rem;
+  }
+  
+  @media screen and (max-width: 1065px) {
+    .card {
+      width: 50%;
+    }
+    header {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .header {
+      width: 100%;
+    }
+    .paragraf {
+      width: 100%;
+      padding-left: 4.3rem;
+      padding-right: 4.3rem;
+    }
+    .up {
+      margin-top: 0;
+    }
+    .up-1 {
+      margin-top: 4rem;
+    }
+  }
+  
+  @media screen and (max-width: 775px) {
+    main {
+      flex-direction: column;
+    }
+    .header {
+      margin-bottom: 2rem;
+    }
+    .up-1 {
+      margin-top: 0;
+    }
+  }
